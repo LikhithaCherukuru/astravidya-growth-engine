@@ -6,7 +6,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { type ReactNode } from "react";
-import appCss from "../styles.css?url";
+ 
 import { MainLayout } from "@/components/layout/MainLayout";
 
 import logo from "@/assets/logo/astravidya-logo.jpeg";
@@ -36,7 +36,7 @@ export const Route = createRootRouteWithContext<{
     ],
 
     links: [
-      { rel: "stylesheet", href: appCss },
+       
 
       { rel: "icon", type: "image/jpeg", href: logo },
       { rel: "apple-touch-icon", href: logo },
