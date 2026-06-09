@@ -49,7 +49,7 @@ export function PortfolioGrid({ limit }: { limit?: number }) {
               style={{
                 transformStyle: "preserve-3d",
               }}
-              className="relative h-[260px] sm:h-[300px] lg:h-[220px]">
+              className="relative h-[200px] sm:h-[300px] lg:h-[220px]">
               {/* FRONT SIDE */}
               <div
                 style={{
