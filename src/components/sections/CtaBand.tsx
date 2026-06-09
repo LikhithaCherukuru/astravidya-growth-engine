@@ -26,7 +26,7 @@ export function CtaBand() {
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
               href={`tel:${PHONE_RAW}`}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-background text-primary font-semibold shadow-lg hover:scale-105 transition"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#4560E8] text-white font-semibold shadow-lg hover:scale-105 transition"
             >
               <Phone className="h-4 w-4" />
               Call {PHONE}

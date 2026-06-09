@@ -36,7 +36,7 @@ function ContactPage() {
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               whileHover={{ y: -6 }}
-              className="rounded-3xl p-7 bg-background border border-purple-100 shadow-sm hover:shadow-brand transition-all block">
+              className="rounded-3xl p-7 bg-transparent border border-purple-100 shadow-sm hover:shadow-brand transition-all block">
               <div className={`h-14 w-14 rounded-2xl bg-gradient-to-br ${c.color} text-white flex items-center justify-center shadow-brand`}>
                 <c.icon className="h-7 w-7" />
               </div>

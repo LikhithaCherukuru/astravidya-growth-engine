@@ -73,7 +73,7 @@ export function WhyChooseUs() {
 
                 {/* Shine Effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700">
-                  <div className="absolute -left-40 top-0 h-full w-20 rotate-12 bg-white/20 blur-xl group-hover:left-[120%] transition-all duration-1000" />
+                  <div className="absolute -left-40 top-0 h-full w-20 rotate-12 bg-transparent/20 blur-xl group-hover:left-[120%] transition-all duration-1000" />
                 </div>
 
                 {/* Icon */}

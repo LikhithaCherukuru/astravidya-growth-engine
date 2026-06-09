@@ -35,7 +35,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-background/80 backdrop-blur-xl shadow-sm border-b border-purple-100"
+          ? "bg-transparent/80 backdrop-blur-xl shadow-sm border-b border-purple-100"
           : "bg-transparent"
       )}
     >
@@ -45,12 +45,18 @@ export function Navbar() {
           <img
             src={logo}
             alt={BRAND_NAME}
-            className="h-10 w-10 lg:h-12 lg:w-12 rounded-xl object-cover shadow-brand"
+            className="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-contain shadow-brand"
           />
 
-          <span className="hidden sm:block font-bold text-lg text-brand-gradient">
-            {BRAND_NAME}
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="font-bold text-sm sm:text-lg text-brand-gradient">
+              {BRAND_NAME}
+            </span>
+
+            <span className="text-[10px] sm:text-xs text-muted-foreground">
+              AI Powered Digital Marketing
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -102,7 +108,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
-            className="lg:hidden bg-background/95 backdrop-blur-xl border-t border-purple-100"
+            className="lg:hidden bg-transparent/95 backdrop-blur-xl border-t border-purple-100"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
               {navLinks.map((l) => (

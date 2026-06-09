@@ -13,7 +13,7 @@ export function Faq({ limit }: { limit?: number }) {
           subtitle="Quick answers about working with us." />
         <Accordion type="single" collapsible className="space-y-3">
           {items.map((f, i) => (
-            <AccordionItem key={i} value={`item-${i}`} className="bg-background border border-purple-100 rounded-2xl px-5 shadow-sm">
+            <AccordionItem key={i} value={`item-${i}`} className="bg-transparent border border-purple-100 rounded-2xl px-5 shadow-sm">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">{f.q}</AccordionTrigger>
               <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
             </AccordionItem>

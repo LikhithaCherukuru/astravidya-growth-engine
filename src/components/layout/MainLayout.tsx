@@ -5,7 +5,7 @@ import { FloatingActions } from "./FloatingActions";
 
 export function MainLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       <main className="flex-1 pt-16 lg:pt-20">{children}</main>
       <Footer />

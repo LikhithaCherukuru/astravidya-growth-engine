@@ -31,7 +31,7 @@ export function VideosGrid({ limit }: { limit?: number }) {
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
               cat === c
                 ? "bg-brand-gradient text-white shadow-brand"
-                : "bg-background border border-purple-200 text-foreground/70 hover:border-primary"
+                : "bg-transparent border border-purple-200 text-foreground/70 hover:border-primary"
             }`}
           >
             {c}
@@ -49,7 +49,7 @@ export function VideosGrid({ limit }: { limit?: number }) {
             transition={{ delay: i * 0.05 }}
             whileHover={{ y: -4 }}
             onClick={() => setOpen(i)}
-            className="text-left group rounded-2xl overflow-hidden bg-background border border-purple-100 shadow-sm hover:shadow-brand transition-all"
+            className="text-left group rounded-2xl overflow-hidden bg-transparent border border-purple-100 shadow-sm hover:shadow-brand transition-all"
           >
             <div className="aspect-video relative overflow-hidden">
               <img
@@ -67,7 +67,7 @@ export function VideosGrid({ limit }: { limit?: number }) {
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition" />
 
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="h-14 w-14 rounded-full bg-background/95 flex items-center justify-center shadow-brand group-hover:scale-110 transition">
+                <div className="h-14 w-14 rounded-full bg-transparent/95 flex items-center justify-center shadow-brand group-hover:scale-110 transition">
                   <Play className="h-6 w-6 text-primary fill-primary ml-1" />
                 </div>
               </div>
@@ -107,7 +107,7 @@ export function VideosGrid({ limit }: { limit?: number }) {
             >
               <button
                 onClick={() => setOpen(null)}
-                className="absolute top-4 right-4 z-10 h-10 w-10 rounded-full bg-background/20 backdrop-blur text-white flex items-center justify-center hover:bg-background/30"
+                className="absolute top-4 right-4 z-10 h-10 w-10 rounded-full bg-transparent/20 backdrop-blur text-white flex items-center justify-center hover:bg-transparent/30"
               >
                 <X className="h-5 w-5" />
               </button>

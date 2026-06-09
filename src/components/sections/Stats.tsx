@@ -29,7 +29,7 @@ export function Stats() {
           <motion.div key={s.label}
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="rounded-2xl p-6 lg:p-8 bg-background border border-purple-100 shadow-sm text-center hover:shadow-brand hover:-translate-y-1 transition">
+            className="rounded-2xl p-6 lg:p-8 bg-transparent border border-purple-100 shadow-sm text-center hover:shadow-brand hover:-translate-y-1 transition">
             <div className="text-4xl lg:text-5xl font-bold text-brand-gradient">
               <Counter to={s.value} suffix={s.suffix} />
             </div>

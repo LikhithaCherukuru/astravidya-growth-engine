@@ -16,7 +16,7 @@ export function Testimonials() {
             <motion.div key={t.name}
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ delay: (i % 3) * 0.08 }}
-              className="rounded-2xl p-6 bg-background border border-purple-100 hover:shadow-brand transition-all relative">
+              className="rounded-2xl p-6 bg-transparent border border-purple-100 hover:shadow-brand transition-all relative">
               <Quote className="absolute top-4 right-4 h-8 w-8 text-purple-100" />
               <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: 5 }).map((_, j) => (
