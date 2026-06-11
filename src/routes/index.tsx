@@ -12,6 +12,8 @@ import { Faq } from "@/components/sections/Faq";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { SectionHeading } from "@/components/sections/Common";
 
+import clientsImage from "@/assets/clients.png";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -102,6 +104,41 @@ function HomePage() {
 
       {/* Testimonials */}
       <Testimonials />
+
+      {/* Trusted Clients */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            eyebrow=""
+            title={
+              <>
+                Our Trusted{" "}
+                <span className="text-brand-gradient">
+                  Clients
+                </span>
+              </>
+            }
+            subtitle="We partner with businesses to build smarter digital solutions and drive real growth."
+          />
+
+          <div className="mt-10 flex justify-center">
+            <img
+              src={clientsImage}
+              alt="Trusted Clients"
+              className="
+                w-full
+                max-w-4xl
+                h-auto
+                rounded-2xl
+                shadow-xl
+                border
+                border-border
+              "
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* FAQ */}
       <Faq limit={8} />

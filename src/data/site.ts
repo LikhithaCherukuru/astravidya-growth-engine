@@ -87,12 +87,42 @@ export const stats = [
 ] as const;
 
 export const testimonials = [
- { name: "Karan Bhatia", role: "CEO, UrbanCart", quote: "From a 0 to a 4x ROAS Shopify store in 6 weeks. Aggressive and accountable." },
-  { name: "Dr. Vikram Rao", role: "Dentist, SmileWorks", quote: "The video reels they shot went viral locally. We are fully booked now." },
-  { name: "Neha Kapoor", role: "Marketing Head, Lumière Diamonds", quote: "Festive campaign creatives were Instagram-perfect. Sales doubled." },
-  { name: "Arjun Patel", role: "Builder, Patel Constructions", quote: "Their landing page + Google ads combo delivers 40 qualified leads daily." },
-  { name: "Meera Iyer", role: "Director, Bright Future School", quote: "Our brand finally feels modern. Parents notice the difference." },
-  { name: "Ravi Krishnan", role: "Founder, NutriGo", quote: "AI-SEO got us to page 1 for 22 keywords. Organic orders 6x in 4 months." },
+  {
+    name: "Dr. Srinivas",
+    role: "Founder, Sri Srinivas Gastro Clinic",
+    quote:
+      "Our online presence transformed completely. Patient inquiries increased significantly within weeks of launching our campaigns.",
+  },
+  {
+    name: "Dr. Praveen Kumar",
+    role: "Director, Swecha Asthma & Allergy Center",
+    quote:
+      "Professional branding, targeted advertising, and engaging content helped us reach more patients than ever before.",
+  },
+  {
+    name: "Dr. Vidushi",
+    role: "Founder, Vidushi Children's Clinic",
+    quote:
+      "The social media videos and digital campaigns created strong local awareness and boosted appointment bookings.",
+  },
+  {
+    name: "Dr. Narayana",
+    role: "Chairman, Narayana Multi Speciality Hospital",
+    quote:
+      "Their team delivered modern healthcare branding and performance marketing that enhanced our hospital's visibility.",
+  },
+  {
+    name: "G. N. Reddy",
+    role: "Owner, GN Jewellers",
+    quote:
+      "Elegant creatives and festive campaigns helped us attract more customers and increase jewellery showroom visits.",
+  },
+  {
+    name: "Raj Kumar",
+    role: "Owner, Raj Jewellery",
+    quote:
+      "The premium branding and social media content perfectly reflected our craftsmanship and improved customer engagement.",
+  },
 ] as const;
 
 export const faqs = [

@@ -16,8 +16,6 @@ export const Route = createFileRoute("/services")({
   }),
   component: () => (
     <>
-      <PageHero eyebrow="Services" title={<>Everything you need to <span className="text-brand-gradient">grow online</span></>}
-        subtitle="From your first landing page to scaled ad campaigns — we are your single growth partner." />
       <ServicesGrid />
       <Process />
       <CtaBand />

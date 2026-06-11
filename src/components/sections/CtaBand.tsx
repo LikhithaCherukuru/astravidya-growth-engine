@@ -12,17 +12,14 @@ export function CtaBand() {
         className="max-w-5xl mx-auto bg-cta-gradient rounded-3xl p-6 md:p-10 text-center text-white shadow-brand relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.2),transparent_50%)]" />
-
         <div className="relative">
           <h2 className="text-2xl md:text-4xl font-bold">
             Ready to grow your business?
           </h2>
-
           <p className="mt-3 text-purple-100 max-w-xl mx-auto text-sm md:text-base">
             Let's build your growth engine. Talk to a strategist today — no
             contracts, no spam.
           </p>
-
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
               href={`tel:${PHONE_RAW}`}
@@ -31,7 +28,6 @@ export function CtaBand() {
               <Phone className="h-4 w-4" />
               Call {PHONE}
             </a>
-
             <a
               href={`https://wa.me/${PHONE_RAW}`}
               target="_blank"

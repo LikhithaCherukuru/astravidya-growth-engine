@@ -15,9 +15,6 @@ export const Route = createFileRoute("/industries")({
   }),
   component: () => (
     <>
-      <PageHero eyebrow="Industries"
-        title={<>Specialized marketing for <span className="text-brand-gradient">your vertical</span></>}
-        subtitle="Deep expertise across 5 high-growth industries — backed by proven case studies." />
       <IndustriesGrid />
       <CtaBand />
     </>

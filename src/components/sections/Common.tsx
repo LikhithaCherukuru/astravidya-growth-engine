@@ -19,7 +19,6 @@ export function SectionHeading({ eyebrow, title, subtitle, center = true }: {
     </motion.div>
   );
 }
-
 export function PageHero({ eyebrow, title, subtitle }: { eyebrow?: string; title: ReactNode; subtitle?: string }) {
   return (
     <section className="relative bg-hero-gradient overflow-hidden">
